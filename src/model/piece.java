@@ -9,6 +9,7 @@ public abstract class Piece {
     private boolean selecionado = false; // Selecionar o objeto (peça) 
 
 
+    // Adicionado atributos para o método
     public Piece(EnumCor cor, int linha, int coluna, String imagem) {
         this.cor = cor;
         this.linha = linha;
@@ -16,11 +17,11 @@ public abstract class Piece {
         this.imagem = imagem;
     }
     
-
+    
     // Validação do movimento da peça
     public abstract boolean validaMovimento(int linhaDestino, int colunaDestino);
 
-    // Getters e setters (não esquecer de implementar)
+    // Getters e setters 
     public int getLinha() {
         return this.linha;
     }
