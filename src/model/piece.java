@@ -7,6 +7,7 @@ public abstract class Piece {
     private String imagem; // Imagens das peças
     private boolean morte = false; // Quando a peça for eliminado
     private boolean selecionado = false; // Selecionar o objeto (peça) 
+    private Board tabuleiro;
 
 
     // Adicionado atributos para o método
@@ -37,4 +38,22 @@ public abstract class Piece {
     public void setColuna(int coluna) {
         this.coluna = coluna;
     }
+
+    public Board getBoard(){
+        return this.tabuleiro;
+    }
+
+    public void setBoard(Board tabuleiro) {
+        this.tabuleiro = tabuleiro;
+    }
+
+    public boolean isSelecionada() {
+        return this.selecionado;
+    }
+
+    public void setSelecionado(boolean selecionado) {
+        this.selecionado = selecionado;
+    }
+
+
 }
