@@ -12,4 +12,3 @@ public class Bishop extends Piece {
     }
 }
 
-//https://www.youtube.com/watch?v=LAWCPYHeR6Q 50min
