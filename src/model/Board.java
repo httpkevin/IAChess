@@ -37,9 +37,19 @@ public class Board {
             peca.setSelecionado(true);
             this.pecasSelecionado = peca;
         }
+    }
+
+    public void movePeca(Piece peca, int novaLinha, int novaColuna) {
+
+    }
+
+    public void inverteVez() {
+        if (this.vez.equals(EnumCor.White)) {
+            this.vez = EnumCor.Black;
         
-        
+        } else {
+            this.vez = EnumCor.White;
+        }
     }
 }
 
-// https://www.youtube.com/watch?v=LAWCPYHeR6Q 130min 
