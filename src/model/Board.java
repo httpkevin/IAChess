@@ -7,16 +7,12 @@ public class Board {
     private Piece pecasSelecionado = null;
     private EnumCor vez = EnumCor.White;
     
-
     // Constante que define o tempo do jogo
     public static final int TEMPO_JOGADA = 10000;
 
     // Definição do espaçamento do tabuleiro com construtor
-    public Board(int linhas, int colunas) {
-        this.pecas = new Piece[linhas][colunas]; 
-    }
-
     public Board() {
+        this.pecas = new Piece[8][8]; 
     }
 
     // Retorna o local da peça dentro do tabuleiro
