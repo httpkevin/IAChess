@@ -1,17 +1,19 @@
 package model;
 
-// Regras e jogabilidade dentro do Tabuleiro
+// Regras e jogabilidade dentro do Tabuleiro/Jogo
 public class Board {
     
     private Piece[][] pecas;
     private Piece pecasSelecionado = null;
     private EnumCor vez = EnumCor.White;
+    private int linhas;
+    private int colunas;
 
     // Constante que define o tempo do jogo
     public static final int TEMPO_JOGADA = 10000;
 
     // Definição do espaçamento do tabuleiro com construtor
-    public Board(int linhas, int colunas) {
+    public Board() {
         this.pecas = new Piece[linhas][colunas]; 
     }
 
